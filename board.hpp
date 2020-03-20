@@ -19,12 +19,12 @@ class Board {
 	field board[100][100];
 	unsigned int width;
 	unsigned int height;
+    
+public:
     GameState gstatus;
 	GameMode mode;
     string fieldDebug(const field& plansza) const;
 	
-public:
-
 	Board(unsigned int w, unsigned int h, GameMode mode);
 	int getBoardWidth() const;
 	int getBoardHeight() const;
